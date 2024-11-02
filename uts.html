@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pencari Resep Masakan</title>
+  <link rel="stylesheet" type="text/css" href="css_uts.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Pencari Resep Makanan</h1>
+    <nav>
+       <ul>
+         <li><a href="#search-form">Cari Resep</a></li>
+         <li><a href="#recipe-form">Masukkan Resep</a></li>
+         <li><a href="#wishlist-form">Wishlist</a></li>
+       </ul>
+    </nav>
+  </header>
+
+  <div>
+    <div>
+      <div>
+        <h2>Cari Resep Berdasarkan Bahan</h2>
+        <form id="search-form">
+          <label for="search-ingredients">Masukkan Bahan:</label>
+          <input type="text" id="search-ingredients" name="search-ingredients" placeholder="Contoh: tomat, ayam">
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+      <div id="search-results"></div>
+      <h2>Masukkan Resep</h2>
+      <form id="recipe-form">
+        <label for="name">Nama Resep:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="ingredients">Bahan:</label>
+        <input type="text" id="ingredients" name="ingredients" placeholder="Contoh: tomat, ayam"><br>
+        <label for="category">Kategori:</label>
+        <input type="text" id="category" name="category" placeholder="Contoh: sarapan"><br>
+        <button type="submit">Tambahkan Resep</button>
+      </form>
+    </div>
+    <div id="recipe-list"></div>
+
+    <!-- Wishlist -->
+    <h2>Wishlist Resep</h2>
+    <form id = "wishlist-form">
+    <div id="wishlist-result"></div>
+    </form>
+  </div>  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Pencari Resep Masakan. Semua hak dilindungi.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/fakhryyyi/" target="_blank">Instagram</a>
+    </div>
+  </footer>
+
+  <script src="js_uts.js"></script>
+</body>
+</html>
